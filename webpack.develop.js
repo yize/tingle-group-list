@@ -20,7 +20,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'tingle-xxx': __dirname + '/tingle/tingle-xxx/src' // 自定义位置
+            'tingle-text-field': __dirname + '/tingle/tingle-text-field/src' // 自定义位置
         }
     },
     externals: {

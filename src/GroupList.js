@@ -4,17 +4,20 @@ class GroupList extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-        }
     }
 
     render() {
+        var t = this;
+        var cls = React.addons.classSet;
         var items = React.Children.map(this.props.children ,function (Item, index) {
             return <li className="tGroupListItem">{Item}</li>;
         });
 
         return (
-            <ul className="tGroupList">
+            <ul className={cls({
+                'tGroupList': true,
+                [t.props.className]: !!t.props.className
+            })}>
                 {items}
             </ul>
         );
@@ -22,7 +25,6 @@ class GroupList extends React.Component {
 }
 
 GroupList.defaultProps = {
-
 }
 
 export {GroupList};

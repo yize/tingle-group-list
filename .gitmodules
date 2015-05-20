@@ -1,3 +1,6 @@
 [submodule "tingle/tingle-style"]
 	path = tingle/tingle-style
 	url = https://github.com/tinglejs/tingle-style.git
+[submodule "tingle/tingle-text-field"]
+	path = tingle/tingle-text-field
+	url = https://github.com/tinglejs/tingle-text-field.git

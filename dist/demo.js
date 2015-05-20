@@ -73,6 +73,13 @@
 	// TODO: move the line to tingle-env
 	_react2['default'].initializeTouchEvents(true);
 	
+	var ua = navigator.userAgent;
+	var isChrome = !!window.chrome;
+	var isAndroid = /android/i.test(ua);
+	var isIOS = /iP(ad|hone|od)/.test(ua);
+	var isMobile = !!ua.match(/mobile/i);
+	var isPC = !isMobile;
+	
 	var Demo = (function (_React$Component) {
 	    function Demo(props) {
 	        _classCallCheck(this, Demo);
@@ -88,26 +95,32 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var t = this;
+	            var cls = _react2['default'].addons.classSet;
 	            return _react2['default'].createElement(
 	                'div',
-	                null,
+	                { className: cls({
+	                        'demo': true,
+	                        'isNotChrome': !isChrome,
+	                        'isAndroid': isAndroid
+	                    }) },
 	                _react2['default'].createElement(
 	                    _src.GroupList,
 	                    null,
 	                    _react2['default'].createElement(
 	                        'div',
-	                        { className: 'tLH44' },
-	                        'aa'
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'tLH44' },
-	                        'bb'
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'tLH44' },
-	                        'cc'
+	                        { className: 'tTextField tPR10 tFBH tFBAC' },
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'tMR10' },
+	                            '姓名'
+	                        ),
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'tFB1' },
+	                            _react2['default'].createElement('input', { className: 'tInput', placeholder: '请输入',
+	                                type: 'text' })
+	                        )
 	                    )
 	                ),
 	                _react2['default'].createElement(

@@ -1,6 +1,5 @@
-import React from 'react';
-import {GroupList} from '../src';
-import {TextField} from 'tingle-text-field';
+var GroupList = require('../src');
+var TextField = require('tingle-text-field');
 
 // TODO: move the line to tingle-env
 React.initializeTouchEvents(true);

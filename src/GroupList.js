@@ -1,4 +1,3 @@
-import React from 'react';
 
 class GroupList extends React.Component {
 
@@ -27,4 +26,4 @@ class GroupList extends React.Component {
 GroupList.defaultProps = {
 }
 
-export {GroupList};
+module.exports = GroupList;

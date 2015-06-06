@@ -1,4 +1,3 @@
-
 class GroupList extends React.Component {
 
     constructor(props) {
@@ -13,17 +12,27 @@ class GroupList extends React.Component {
         });
 
         return (
-            <ul className={cls({
-                'tGroupList': true,
-                [t.props.className]: !!t.props.className
-            })}>
-                {items}
-            </ul>
+            <div>
+                <h4 className="tFS12 tLH1_5 tPL10 tPR10 tOmit">{t.props.title}</h4>
+                <ul className={cls({
+                    tGroupList: true,
+                    [t.props.className]: !!t.props.className
+                })} style={{
+                    paddingLeft: t.props.itemIndent
+                }}>
+                    {items}
+                </ul>
+            </div>
         );
     }
 }
 
+GroupList.propTypes = {
+    itemIndent: React.PropTypes.number
+}
+
 GroupList.defaultProps = {
+    itemIndent: 0
 }
 
 module.exports = GroupList;

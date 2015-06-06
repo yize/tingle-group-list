@@ -22,16 +22,16 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <GroupList>
+                <GroupList className="foo" title={"默认样式"}>
+                    <div className="tLH44 tPL10">aa</div>
+                    <div className="tLH44 tPL10">bb</div>
+                    <div className="tLH44 tPL10">cc</div>
+                </GroupList>
+                <GroupList itemIndent={10} title={"设置分割线10px缩进"}>
                     <TextField label="姓名" placeholder="请输入"
                      value={this.state.name}
                      onChange={this.handleNameChange.bind(this)}/>
                     <TextField label="层级" value="层级" readOnly={true}/>
-                </GroupList>
-                <GroupList className="foo">
-                    <div className="tLH44">aa</div>
-                    <div className="tLH44">bb</div>
-                    <div className="tLH44">cc</div>
                 </GroupList>
             </div>
         );

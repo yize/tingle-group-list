@@ -1,3 +1,5 @@
+var classnames = require('classnames');
+
 class GroupList extends React.Component {
 
     constructor(props) {
@@ -6,7 +8,6 @@ class GroupList extends React.Component {
 
     render() {
         var t = this;
-        var cls = React.addons.classSet;
         var items = React.Children.map(this.props.children ,function (Item, index) {
             return <li className="tGroupListItem">{Item}</li>;
         });
@@ -14,7 +15,7 @@ class GroupList extends React.Component {
         return (
             <div>
                 <h4 className="tFS12 tLH1_5 tPL10 tPR10 tOmit">{t.props.title}</h4>
-                <ul className={cls({
+                <ul className={classnames({
                     tGroupList: true,
                     [t.props.className]: !!t.props.className
                 })} style={{

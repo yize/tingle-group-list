@@ -1,47 +1,37 @@
-import React from 'react';
-import {GroupList} from '../src';
+var GroupList = require('../src');
+var TextField = require('tingle-text-field');
 
 // TODO: move the line to tingle-env
 React.initializeTouchEvents(true);
-
-var ua = navigator.userAgent;
-var isChrome = !!window.chrome;
-var isAndroid = /android/i.test(ua);
-var isIOS = /iP(ad|hone|od)/.test(ua);
-var isMobile = !!ua.match(/mobile/i);
-var isPC = !isMobile;
 
 class Demo extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            name: ''
+        }
     }
 
-    componentDidMount() {
+    handleNameChange(newValue) {
+        this.setState({
+            name: newValue
+        });
     }
 
     render() {
-        var t = this;
-        var cls = React.addons.classSet;
         return (
-            <div className={cls({
-                "demo": true,
-                "isNotChrome": !isChrome,
-                "isAndroid": isAndroid
-            })}>
-                <GroupList>
-                    <div className="tTextField tPR10 tFBH tFBAC">
-                        <div className="tMR10">姓名</div>
-                        <div className="tFB1">
-                            <input className="tInput" placeholder="请输入"
-                             type="text"/>
-                        </div>
-                    </div>
+            <div>
+                <GroupList className="foo" title={"默认样式"}>
+                    <div className="tLH44 tPL10">aa</div>
+                    <div className="tLH44 tPL10">bb</div>
+                    <div className="tLH44 tPL10">cc</div>
                 </GroupList>
-                <GroupList>
-                    <div className="tLH44">aa</div>
-                    <div className="tLH44">bb</div>
-                    <div className="tLH44">cc</div>
+                <GroupList itemIndent={10} title={"设置分割线10px缩进"}>
+                    <TextField label="姓名" placeholder="请输入"
+                     value={this.state.name}
+                     onChange={this.handleNameChange.bind(this)}/>
+                    <TextField label="层级" value="层级" readOnly={true}/>
                 </GroupList>
             </div>
         );

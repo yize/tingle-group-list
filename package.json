@@ -1,30 +1,41 @@
 {
-  "name": "tingle-mask",
+  "name": "tingle-group-list",
   "version": "0.0.0",
-  "description": "",
-  "repository": "https://github.com/tinglejs/tingle-mask.git",
+  "description": "tingle-group-list component for tingle.",
+  "repository": "https://github.com/tinglejs/tingle-group-list.git",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "main": "src/index.js",
   "files": [
-    "dist",
+    "src",
     "README.md"
   ],
+  "keywords": [
+    "tingle-group-list,GroupList",
+    ""
+  ],
   "dependencies": {
-    "classnames": "~2.1.2",
-    "fastclick": "~1.0.6",
-    "react": "^0.13.3"
+    "classnames": "^2.1.2",
+    "fastclick": "^1.0.6",
+    "react": "^0.13.3",
+    "tingle-context": "~0.0.3",
+    "tingle-style": "~0.0.1",
+    "zepto": "0.0.4"
   },
   "devDependencies": {
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
     "browser-sync": "~1.9.1",
-    "del": "^1.1.1",
-    "gulp-rename": "^1.2.2",
+    "gulp": "^3.9.0",
     "gulp-sourcemaps": "~1.5.1",
     "gulp-stylus": "~2.0.1",
     "gulp-uglify": "^1.2.0",
-    "gulp-webpack": "~1.1.2",
     "webpack": "^1.8.4"
   },
-  "scripts": {},
-  "author": "gnosaij",
+  "scripts": {
+    "start": "gulp d"
+  },
   "license": "MIT"
 }

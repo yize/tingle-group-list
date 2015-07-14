@@ -1,3 +1,10 @@
+/**
+ * GroupList Component for tingle
+ * @auther gnosaij
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
 var classnames = require('classnames');
 
 class GroupList extends React.Component {

@@ -1,8 +1,12 @@
+/**
+ * GroupList Component Demo for tingle
+ * @auther gnosaij
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
 var GroupList = require('../src');
 var TextField = require('tingle-text-field');
-
-// TODO: move the line to tingle-env
-React.initializeTouchEvents(true);
 
 class Demo extends React.Component {
 
@@ -38,4 +42,4 @@ class Demo extends React.Component {
     }
 };
 
-React.render(<Demo/>, document.getElementById('TingleDemo'));
+module.exports = Demo;

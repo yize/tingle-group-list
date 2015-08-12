@@ -1,6 +1,6 @@
 /**
  * GroupList Component Demo for tingle
- * @auther gnosaij
+ * @author jiasong.js
  *
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.

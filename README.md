@@ -7,6 +7,7 @@
 - tags: mobile,H5,手机,移动,
 - description: 常用的列表 Group 区块。提供基础的样式布局。 
 - maintainers: jiasong.js
+- screenshots: http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png
 
 ---
 

@@ -6,7 +6,7 @@
 - order: 0
 - tags: mobile,H5,手机,移动,
 - description: 常用的列表 Group 区块。提供基础的样式布局。 
-- maintainers: jiasong.js
+- maintainers: 拂山(74803)
 - screenshots: http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png
 
 ---
@@ -21,9 +21,7 @@ GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 
 ![效果图](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png)
 
-## Best Practice 最佳实践
-
-### Simple Usage
+## Simple Usage
 
 ```
 handleNameChange(newValue) {
@@ -51,7 +49,7 @@ render() {
 }
 ```
 
-### 可用配置
+## 可用配置
 
 | 配置项 | 必填 | 默认值 | 功能/备注 |
 |---|----|---|----|

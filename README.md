@@ -23,8 +23,6 @@ GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 
 ## Best Practice 最佳实践
 
-这是一个 tingle 组件，使用请参考[这里](http://gitlab.alibaba-inc.com/alinwmobile/tingle/tree/master)。
-
 ### Simple Usage
 
 ```

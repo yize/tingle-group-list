@@ -1,9 +1,11 @@
+# GroupList 列表
+
 - name: tingle-group-list
 - category: tingle
 - caption: true
 - order: 0
 - tags: mobile,H5,手机,移动,
-- description: tingle-group-list component for tingle.
+- description: 常用的列表 Group 区块。提供基础的样式布局。 
 - maintainers: jiasong.js
 
 ---

@@ -5,8 +5,7 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-var GroupList = require('../src');
-var TextField = require('tingle-text-field');
+const GroupList = require('../src');
 
 class Demo extends React.Component {
 
@@ -26,20 +25,18 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <GroupList className="foo" title={"默认样式"}>
-                    <div className="tLH44 tPL10">aa</div>
-                    <div className="tLH44 tPL10">bb</div>
-                    <div className="tLH44 tPL10">cc</div>
+                <GroupList itemIndent={40} title={"默认样式"}>
+                    <div className="demo">aa</div>
+                    <div className="demo">bb</div>
+                    <div className="demo">cc</div>
                 </GroupList>
-                <GroupList itemIndent={10} title={"设置分割线10px缩进"}>
-                    <TextField label="姓名" placeholder="请输入"
-                     value={this.state.name}
-                     onChange={this.handleNameChange.bind(this)}/>
-                    <TextField label="层级" value="层级" readOnly={true}/>
+                <GroupList itemIndent={40} title={"默认样式"}>
+                    <div className="demo">aa</div>
+                    <div className="demo">bb</div>
+                    <div className="demo">cc</div>
                 </GroupList>
             </div>
         );
     }
-};
-
+}
 module.exports = Demo;

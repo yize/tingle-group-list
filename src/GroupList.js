@@ -5,7 +5,8 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-var classnames = require('classnames');
+const classnames = require('classnames');
+const Context = require('tingle-context');
 
 class GroupList extends React.Component {
 
@@ -14,19 +15,20 @@ class GroupList extends React.Component {
     }
 
     render() {
-        var t = this;
-        var items = React.Children.map(this.props.children ,function (Item, index) {
+        const t = this;
+        const items = React.Children.map(this.props.children ,function (Item, index) {
             return <li className="tGroupListItem">{Item}</li>;
         });
 
+        const itemIndent = Context.rem(t.props.itemIndent);
         return (
             <div>
-                <h4 className="tFS12 tLH1_5 tPL10 tPR10 tOmit">{t.props.title}</h4>
+                <h4 className="tGroupListHeader">{t.props.title}</h4>
                 <ul className={classnames({
                     tGroupList: true,
                     [t.props.className]: !!t.props.className
                 })} style={{
-                    paddingLeft: t.props.itemIndent
+                    paddingLeft: itemIndent
                 }}>
                     {items}
                 </ul>
@@ -37,10 +39,10 @@ class GroupList extends React.Component {
 
 GroupList.propTypes = {
     itemIndent: React.PropTypes.number
-}
+};
 
 GroupList.defaultProps = {
     itemIndent: 0
-}
+};
 
 module.exports = GroupList;

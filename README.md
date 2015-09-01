@@ -1,16 +1,5 @@
 # GroupList 列表
 
-- name: tingle-group-list
-- category: tingle
-- caption: true
-- order: 0
-- tags: mobile,H5,手机,移动,
-- description: 常用的列表 Group 区块。提供基础的样式布局。 
-- maintainers: 拂山(74803)
-- screenshots: http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png
-
----
-
 ## tingle-group-list [![Dependency Status](http://img.shields.io/david/tinglejs/tingle-group-list.svg?style=flat-square)](https://david-dm.org/tinglejs/tingle-group-list) [![devDependency Status](http://img.shields.io/david/dev/tinglejs/tingle-group-list.svg?style=flat-square)](https://david-dm.org/tinglejs/tingle-group-list#info=devDependencies) [![Bower version](https://badge.fury.io/bo/tingle-group-list.svg)](http://badge.fury.io/bo/tingle-group-list)
 
 [![tingle-group-list](https://nodei.co/npm/tingle-group-list.png)](https://npmjs.org/package/tingle-group-list)
@@ -55,9 +44,8 @@ render() {
 |---|----|---|----|
 |className|optional|-|自定义样式类|
 |title|optional|-|GroupList 的标题|
-|itemIndent|optional|-| 列表的padding-left |
+|itemIndent|optional|40| 列表的padding-left , rem 方案，40为在 iPhone 6 上的宽|
 
 ## Links 相关链接
 
-- [Fire a bug/Issues 提Bug](http://gitlab.alibaba-inc.com/alinwmobile/tingle-group-list/issues)
-- [Tingle项目](http://gitlab.alibaba-inc.com/alinwmobile/tingle/tree/master)
+- [Fire a bug/Issues 提Bug](http://github.com/tinglejs/tingle-group-list/issues)

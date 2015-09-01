@@ -1,12 +1,15 @@
 {
   "name": "tingle-group-list",
-  "version": "0.0.0",
-  "description": "tingle-group-list component for tingle.",
+  "version": "0.0.1",
+  "description": "常用的列表 Group 区块。提供基础的样式布局。",
   "repository": "https://github.com/tinglejs/tingle-group-list.git",
   "author": {
     "name": "jiasong.js",
     "email": ""
   },
+  "maintainers": [
+    "yize <yize.shc@gmail.com>"
+  ],
   "main": "src/index.js",
   "files": [
     "src",
@@ -20,8 +23,8 @@
     "classnames": "^2.1.2",
     "fastclick": "^1.0.6",
     "react": "^0.13.3",
-    "tingle-context": "~0.0.3",
-    "tingle-style": "~0.0.1",
+    "tingle-context": "~0.1.0",
+    "tingle-style": "0.0.2",
     "zepto": "0.0.4"
   },
   "devDependencies": {
@@ -33,5 +36,6 @@
   "scripts": {
     "start": "gulp server"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "screenshots": "http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png"
 }

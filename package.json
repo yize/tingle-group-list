@@ -16,8 +16,9 @@
     "README.md"
   ],
   "keywords": [
-    "tingle-group-list,GroupList",
-    ""
+    "tingle-group-list",
+    "GroupList",
+    "tingle"
   ],
   "dependencies": {
     "classnames": "^2.1.2",

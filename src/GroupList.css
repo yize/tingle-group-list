@@ -23,5 +23,12 @@
 .tGroupListItem:last-child {
   border-bottom: none;
 }
+.hairline .tGroupList {
+  border-top-width: 0.013333333333333rem;
+  border-bottom-width: 0.013333333333333rem;
+}
+.hairline .tGroupListItem {
+  border-bottom-width: 0.013333333333333rem;
+}
 
 /*# sourceMappingURL=GroupList.css.map */

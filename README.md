@@ -1,4 +1,4 @@
-# tingle-group-list [![Dependency Status](http://img.shields.io/david/tinglejs/tingle-group-list.svg?style=flat-square)](https://david-dm.org/tinglejs/tingle-group-list) [![devDependency Status](http://img.shields.io/david/dev/tinglejs/tingle-group-list.svg?style=flat-square)](https://david-dm.org/tinglejs/tingle-group-list#info=devDependencies) [![Bower version](https://badge.fury.io/js/tingle-group-list.svg)](http://badge.fury.io/js/tingle-group-list)
+# tingle-group-list [![npm version](https://badge.fury.io/js/tingle-group-list.svg)](http://badge.fury.io/js/tingle-group-list)
 
 ## TL;DR
 
@@ -33,7 +33,7 @@ render() {
 |---|----|---|----|
 |className|optional|-|自定义样式类|
 |title|optional|-|GroupList 的标题|
-|itemIndent|optional|40| 列表的padding-left , rem 方案，40为在 iPhone 6 上的宽|
+|itemIndent|optional|40| 列表的padding-left , rem 方案，40为在 iPhone 6 上的宽 |
 
 ## Links 相关链接
 

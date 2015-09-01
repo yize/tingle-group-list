@@ -4,7 +4,7 @@
 
 GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 
-![效果图](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/alinwmobile/tingle/1e5d0ac94f/image.png_200x200.jpg)
+![效果图](https://img.alicdn.com/tps/TB1DXdYJpXXXXcHXXXXXXXXXXXX-746-1262.png_400x400.jpg)
 
 ## Simple Usage
 

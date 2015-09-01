@@ -42,7 +42,7 @@ GroupList.propTypes = {
 };
 
 GroupList.defaultProps = {
-    itemIndent: 0
+    itemIndent: 40
 };
 
 module.exports = GroupList;

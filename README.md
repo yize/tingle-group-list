@@ -8,7 +8,7 @@ GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 
 ## Simple Usage
 
-```
+```js
 render() {
     return (
         <div>

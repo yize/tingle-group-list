@@ -24,11 +24,11 @@
   border-bottom: none;
 }
 .hairline .tGroupList {
-  border-top-width: 0.013333333333333rem;
-  border-bottom-width: 0.013333333333333rem;
+  border-top-width: 0.5px;
+  border-bottom-width: 0.5px;
 }
 .hairline .tGroupListItem {
-  border-bottom-width: 0.013333333333333rem;
+  border-bottom-width: 0.5px;
 }
 
 /*# sourceMappingURL=GroupList.css.map */

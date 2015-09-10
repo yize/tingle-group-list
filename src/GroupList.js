@@ -20,7 +20,7 @@ class GroupList extends React.Component {
             return <li className="tGroupListItem">{Item}</li>;
         });
 
-        const itemIndent = Context.rem(t.props.itemIndent);
+        const itemIndent = t.props.itemIndent;
         return (
             <div>
                 <h4 className="tGroupListHeader">{t.props.title}</h4>
@@ -42,7 +42,7 @@ GroupList.propTypes = {
 };
 
 GroupList.defaultProps = {
-    itemIndent: 40
+    itemIndent: 15
 };
 
 module.exports = GroupList;

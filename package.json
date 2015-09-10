@@ -1,11 +1,11 @@
 {
   "name": "tingle-group-list",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "常用的列表 Group 区块。提供基础的样式布局。",
   "repository": "https://github.com/tinglejs/tingle-group-list.git",
   "author": {
     "name": "jiasong.js",
-    "email": ""
+    "email": "gnosaij@yeah.net"
   },
   "maintainers": [
     "yize <yize.shc@gmail.com>"
@@ -22,21 +22,20 @@
   ],
   "dependencies": {
     "classnames": "^2.1.2",
-    "fastclick": "^1.0.6",
-    "react": "^0.13.3",
     "tingle-context": "~0.1.0",
-    "tingle-style": "0.0.2",
-    "zepto": "0.0.4"
+    "tingle-style": "~0.2.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",
     "babel-loader": "^5.3.2",
     "gulp": "^3.9.0",
-    "tingle-dev-tools": "latest"
+    "tingle-dev-tools": "latest",
+    "fastclick": "^1.0.6",
+    "react": "^0.13.3"
   },
   "scripts": {
     "start": "gulp server"
   },
   "license": "MIT",
-  "screenshots": "https://img.alicdn.com/tps/TB1DXdYJpXXXXcHXXXXXXXXXXXX-746-1262.png"
+  "screenshots": "https://img.alicdn.com/tps/TB1A_L7JpXXXXXdXpXXXXXXXXXX-750-1254.png"
 }

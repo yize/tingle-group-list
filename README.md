@@ -4,7 +4,7 @@
 
 GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 
-![效果图](https://img.alicdn.com/tps/TB1DXdYJpXXXXcHXXXXXXXXXXXX-746-1262.png_400x400.jpg)
+![效果图](https://img.alicdn.com/tps/TB1A_L7JpXXXXXdXpXXXXXXXXXX-750-1254.png)
 
 ## Simple Usage
 
@@ -12,12 +12,12 @@ GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 render() {
     return (
         <div>
-            <GroupList itemIndent={40} title={"默认样式"}>
+            <GroupList title={"默认样式"}>
                 <div className="demo">aa</div>
                 <div className="demo">bb</div>
                 <div className="demo">cc</div>
             </GroupList>
-            <GroupList itemIndent={40} title={"默认样式"}>
+            <GroupList title={"默认样式"}>
                 <div className="demo">aa</div>
                 <div className="demo">bb</div>
                 <div className="demo">cc</div>
@@ -33,7 +33,7 @@ render() {
 |---|----|---|----|
 |className|optional|-|自定义样式类|
 |title|optional|-|GroupList 的标题|
-|itemIndent|optional|40| 列表的padding-left , rem 方案，40为在 iPhone 6 上的宽 |
+|itemIndent|optional|15| 列表的padding-left |
 
 ## Links 相关链接
 

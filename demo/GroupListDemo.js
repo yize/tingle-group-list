@@ -25,12 +25,12 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <GroupList itemIndent={40} title={"默认样式"}>
+                <GroupList title={"默认样式"}>
                     <div className="demo">aa</div>
                     <div className="demo">bb</div>
                     <div className="demo">cc</div>
                 </GroupList>
-                <GroupList itemIndent={40} title={"默认样式"}>
+                <GroupList title={"默认样式"}>
                     <div className="demo">aa</div>
                     <div className="demo">bb</div>
                     <div className="demo">cc</div>

@@ -23,7 +23,7 @@ class GroupList extends React.Component {
         const itemIndent = t.props.itemIndent;
         return (
             <div>
-                <h4 className="tGroupListHeader">{t.props.title}</h4>
+                {t.props.title && <h4 className="tGroupListHeader">{t.props.title}</h4>}
                 <ul className={classnames({
                     tGroupList: true,
                     [t.props.className]: !!t.props.className

@@ -35,6 +35,11 @@ class Demo extends React.Component {
                     <div className="demo">bb</div>
                     <div className="demo">cc</div>
                 </GroupList>
+                <GroupList>
+                    <div className="demo">aa</div>
+                    <div className="demo">bb</div>
+                    <div className="demo">cc</div>
+                </GroupList>
             </div>
         );
     }

@@ -18,7 +18,9 @@
   "keywords": [
     "tingle-group-list",
     "GroupList",
-    "tingle"
+    "tingle",
+    "列表",
+    "布局"
   ],
   "dependencies": {
     "classnames": "^2.1.2",

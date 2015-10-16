@@ -5,8 +5,9 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-const classnames = require('classnames');
-const Context = require('tingle-context');
+
+import classnames from 'classnames';
+import Context from 'tingle-context';
 
 class GroupList extends React.Component {
 
@@ -16,20 +17,19 @@ class GroupList extends React.Component {
 
     render() {
         const t = this;
-        const items = React.Children.map(this.props.children ,function (Item, index) {
-            return <li className="tGroupListItem">{Item}</li>;
+        const items = React.Children.map(this.props.children, function (Item) {
+            return <li className="tGroupListItem">
+                <div className="tGroupListItemInner tHalfPixBottom">{Item}</div>
+            </li>;
         });
 
-        const itemIndent = t.props.itemIndent;
         return (
-            <div>
-                {t.props.title && <h4 className="tGroupListHeader">{t.props.title}</h4>}
+            <div className="tGroupList">
+                {t.props.title && <div className="tGroupListHeader">{t.props.title}</div>}
                 <ul className={classnames({
-                    tGroupList: true,
+                    "tGroupListBody": true,
                     [t.props.className]: !!t.props.className
-                })} style={{
-                    paddingLeft: itemIndent
-                }}>
+                })} >
                     {items}
                 </ul>
             </div>
@@ -38,11 +38,13 @@ class GroupList extends React.Component {
 }
 
 GroupList.propTypes = {
-    itemIndent: React.PropTypes.number
+    className: React.PropTypes.string,
+    title: React.PropTypes.string
 };
 
 GroupList.defaultProps = {
-    itemIndent: 15
+    className: '',
+    title: ''
 };
 
-module.exports = GroupList;
+export default GroupList;

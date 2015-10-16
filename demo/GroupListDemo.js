@@ -25,20 +25,20 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <GroupList title={"默认样式"}>
-                    <div className="demo">aa</div>
-                    <div className="demo">bb</div>
-                    <div className="demo">cc</div>
+                <GroupList title={"GroupListHeader"}>
+                    <span>aa</span>
+                    <span>bb</span>
+                    <span>cc</span>
                 </GroupList>
                 <GroupList title={"默认样式"}>
-                    <div className="demo">aa</div>
-                    <div className="demo">bb</div>
-                    <div className="demo">cc</div>
+                    <span>aa</span>
+                    <span>bb</span>
+                    <span>cc</span>
                 </GroupList>
                 <GroupList>
-                    <div className="demo">aa</div>
-                    <div className="demo">bb</div>
-                    <div className="demo">cc</div>
+                    <span>aa</span>
+                    <span>bb</span>
+                    <span>cc</span>
                 </GroupList>
             </div>
         );

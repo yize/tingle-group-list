@@ -6,42 +6,33 @@
  * All rights reserved.
  */
 .tGroupList {
-  margin-bottom: 34px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
-.tGroupList:first-child {
-  margin-top: 34px;
+.hairline .tGroupList {
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
 }
-.tGroupListHeader {
-  line-height: 1;
-  font-size: 14px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 10px;
-}
-.tGroupListBody {
-  background-color: #fff;
-  border-bottom: 1px solid #e0e0e1;
-  border-top: 1px solid #e0e0e1;
+.tGroupList + .tGroupList {
+  border-top: none;
 }
 .tGroupListItem {
-  padding-left: 15px;
-}
-.tGroupListItem:last-child .tGroupListItemInner {
-  border-bottom: none;
-}
-.tGroupListItemInner {
   position: relative;
   min-height: 44px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #e0e0e1;
 }
-.hairline .tGroupListBody {
-  border-top-width: 0.5px;
-  border-bottom-width: 0.5px;
+.tGroupListItem:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
 }
-.hairline .tGroupListItem {
-  border-bottom-width: 0.5px;
+.tGroupListItem:last-child:after {
+  border-bottom: none;
+}
+.hairline .tGroupListItem:after {
+  border-bottom: 0.5px soild #ccc;
 }
 
 /*# sourceMappingURL=GroupList.css.map */

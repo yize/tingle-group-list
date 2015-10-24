@@ -8,41 +8,29 @@
 
 @require '../node_modules/tingle-style/src/var'
 
-border-style = 1px solid #E0E0E1
+// 未来的可配置项
+tGroupListLineColor = #ddd
+tGroupListHairlineColor = #ccc
 
 .tGroupList
-  margin-bottom 34px
-  &:first-child
-    margin-top 34px
-
-.tGroupListHeader
-  line-height 1
-  font-size 14px
-  padding-left 15px
-  padding-right 15px
-  margin-bottom 10px
-
-.tGroupListBody
-  background-color #fff
-  border-bottom border-style
-  border-top border-style
-
+  border-top 1px solid tGroupListLineColor
+  border-bottom 1px solid tGroupListLineColor
+  .hairline &
+    border-top 0.5px solid tGroupListHairlineColor
+    border-bottom 0.5px solid tGroupListHairlineColor
+  & + &
+    border-top none
 .tGroupListItem
-  padding-left 15px
-  &:last-child
-    .tGroupListItemInner
-      border-bottom none
-
-.tGroupListItemInner
   position relative
   min-height 44px
-  display flex
-  align-items center
-  border-bottom border-style
-
-.hairline
-  .tGroupListBody
-    border-top-width 0.5px
-    border-bottom-width 0.5px
-  .tGroupListItem
-    border-bottom-width 0.5px
+  &:after
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    border-bottom 1px solid tGroupListLineColor
+  &:last-child:after
+    border-bottom none
+  .hairline &:after
+    border-bottom 0.5px soild tGroupListHairlineColor

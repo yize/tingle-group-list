@@ -6,8 +6,22 @@
  * All rights reserved.
  */
 
-import classnames from 'classnames';
-import Context from 'tingle-context';
+const classnames = require('classnames');
+const {createStyleContext} = require('./css-util');
+
+let style = createStyleContext('tGroupListStyleEl');
+
+style.addRule('a', `
+            body{
+                background-color: red;
+            }
+`);
+
+style.addRule('b', `
+    body{
+        font-size: 30px;
+    }
+`);
 
 class GroupList extends React.Component {
 
@@ -16,35 +30,25 @@ class GroupList extends React.Component {
     }
 
     render() {
-        const t = this;
-        const items = React.Children.map(this.props.children, function (Item) {
-            return <li className="tGroupListItem">
-                <div className="tGroupListItemInner tHalfPixBottom">{Item}</div>
-            </li>;
-        });
-
+        let t = this;
         return (
-            <div className="tGroupList">
-                {t.props.title && <div className="tGroupListHeader">{t.props.title}</div>}
-                <ul className={classnames({
-                    "tGroupListBody": true,
-                    [t.props.className]: !!t.props.className
-                })} >
-                    {items}
-                </ul>
+            <div className={classnames('tGroupList', {
+                [t.props.className]: !!t.props.className
+            })}>
+                {React.Children.map(t.props.children, function (Item) {
+                    return <div className='tGroupListItem tFBH tFBAC'>{Item}</div>;
+                })}
             </div>
         );
     }
 }
 
 GroupList.propTypes = {
-    className: React.PropTypes.string,
-    title: React.PropTypes.string
+    className: React.PropTypes.string
 };
 
 GroupList.defaultProps = {
-    className: '',
-    title: ''
+    className: ''
 };
 
 export default GroupList;

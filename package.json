@@ -1,7 +1,7 @@
 {
   "name": "tingle-group-list",
   "version": "0.3.0",
-  "description": "常用的列表 Group 区块。提供基础的样式布局。",
+  "description": "列表容器组件",
   "repository": "https://github.com/tinglejs/tingle-group-list.git",
   "author": {
     "name": "jiasong.js",
@@ -17,7 +17,8 @@
   ],
   "keywords": [
     "tingle-group-list",
-    "GroupList",
+    "react list component"
+    "list component",
     "tingle",
     "列表",
     "布局"

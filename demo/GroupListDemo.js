@@ -11,15 +11,6 @@ class Demo extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            name: ''
-        }
-    }
-
-    handleNameChange(newValue) {
-        this.setState({
-            name: newValue
-        });
     }
 
     render() {
@@ -34,14 +25,14 @@ class Demo extends React.Component {
                 <GroupList>
                     <div>当两个GroupList相邻时，后一个无上边框</div>
                 </GroupList>
-                <div className='tBCe tFS12 tLH2'>自定义间隔线左缩进</div>
-                <GroupList className='customLineIndent'>
+                <div className='tBCe tFS12 tLH2'>自定义间隔线左缩进 1rem</div>
+                <GroupList lineIndent={'1rem'}>
                     <div>间隔线的缩进是独立于Item的</div>
                     <div>间隔线的缩进是独立于Item的</div>
                     <div>间隔线的缩进是独立于Item的</div>
                 </GroupList>
-                <div className='tBCe tFS12 tLH2'>自定义间隔线左右缩进</div>
-                <GroupList className='customLineIndent2'>
+                <div className='tBCe tFS12 tLH2'>自定义间隔线左右各缩进 10px</div>
+                <GroupList lineIndent={[10, 10]}>
                     <div>间隔线的缩进是独立于Item的</div>
                     <div>间隔线的缩进是独立于Item的</div>
                     <div>间隔线的缩进是独立于Item的</div>

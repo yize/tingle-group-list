@@ -15,22 +15,23 @@ tGroupListHairlineColor = #ccc
 .tGroupList
   border-top 1px solid tGroupListLineColor
   border-bottom 1px solid tGroupListLineColor
-  .hairline &
-    border-top 0.5px solid tGroupListHairlineColor
-    border-bottom 0.5px solid tGroupListHairlineColor
-  & + &
-    border-top none
+.hairline .tGroupList
+  border-top rem(1) solid tGroupListHairlineColor
+  border-bottom rem(1) solid tGroupListHairlineColor
+.tGroupList + .tGroupList
+  border-top none
+
 .tGroupListItem
   position relative
   min-height 44px
-  &:after
-    content ''
-    position absolute
-    bottom 0
-    left 0
-    right 0
-    border-bottom 1px solid tGroupListLineColor
-  &:last-child:after
-    border-bottom none
-  .hairline &:after
-    border-bottom 0.5px soild tGroupListHairlineColor
+.tGroupListItem:after
+  content ''
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  border-bottom 1px solid tGroupListLineColor
+.hairline .tGroupListItem:after
+  border-bottom rem(1) solid tGroupListHairlineColor
+.tGroupListItem:last-child:after
+  border-bottom none

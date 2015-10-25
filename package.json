@@ -1,6 +1,6 @@
 {
   "name": "tingle-group-list",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "常用的列表 Group 区块。提供基础的样式布局。",
   "repository": "https://github.com/tinglejs/tingle-group-list.git",
   "author": {
@@ -25,7 +25,7 @@
   "dependencies": {
     "classnames": "^2.1.2",
     "tingle-context": "~0.1.0",
-    "tingle-style": "~0.2.0"
+    "tingle-style": "~0.3.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",

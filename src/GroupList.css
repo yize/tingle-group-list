@@ -10,8 +10,8 @@
   border-bottom: 1px solid #ddd;
 }
 .hairline .tGroupList {
-  border-top: 0.5px solid #ccc;
-  border-bottom: 0.5px solid #ccc;
+  border-top: 0.013333333333333rem solid #ccc;
+  border-bottom: 0.013333333333333rem solid #ccc;
 }
 .tGroupList + .tGroupList {
   border-top: none;
@@ -28,11 +28,11 @@
   right: 0;
   border-bottom: 1px solid #ddd;
 }
+.hairline .tGroupListItem:after {
+  border-bottom: 0.013333333333333rem solid #ccc;
+}
 .tGroupListItem:last-child:after {
   border-bottom: none;
-}
-.hairline .tGroupListItem:after {
-  border-bottom: 0.5px soild #ccc;
 }
 
 /*# sourceMappingURL=GroupList.css.map */

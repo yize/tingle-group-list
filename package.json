@@ -1,6 +1,6 @@
 {
   "name": "tingle-group-list",
-  "version": "0.3.0",
+  "version": "0.2.2",
   "description": "列表容器组件",
   "repository": "https://github.com/tinglejs/tingle-group-list.git",
   "author": {
@@ -17,8 +17,7 @@
   ],
   "keywords": [
     "tingle-group-list",
-    "react list component",
-    "list component",
+    "GroupList",
     "tingle",
     "列表",
     "布局"

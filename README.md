@@ -33,7 +33,7 @@ render() {
 |---|----|---|----|
 |className|optional|-|自定义样式类|
 |title|optional|-|GroupList 的标题|
-|itemIndent|optional|15| 列表的padding-left |
+|itemIndent(separated)|optional|15| 列表的padding-left |
 
 ## Links 相关链接
 

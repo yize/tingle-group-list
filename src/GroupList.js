@@ -5,77 +5,44 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-
 const classnames = require('classnames');
-const {createStyleContext, unitize} = require('tingle-style');
-const styleContext = createStyleContext('tGroupList');
+const Context = require('tingle-context');
 
 class GroupList extends React.Component {
 
     constructor(props) {
         super(props);
-        let t = this;
-        t.state = {
-            lineLndentClassName: []
-        };
-
-        if (props.lineIndent) {
-            let lineIndentArray;
-            if (Array.isArray(props.lineIndent)) {
-                lineIndentArray = props.lineIndent;
-            } else {
-                lineIndentArray = [].concat(props.lineIndent);
-            }
-
-            t.addLineIndentStyle('Left', unitize(lineIndentArray[0]));
-            t.addLineIndentStyle('Right', unitize(lineIndentArray[1]));
-
-            t.state.lineIndentClassName = t.state.lineLndentClassName.join(' ');
-            console.log(t.state.lineIndentClassName);
-        }
-    }
-
-    addLineIndentStyle(side, value) {
-        if (!value) {
-            return;
-        }
-        let t = this;
-        t.state.lineLndentClassName.push(`lineIndet${side}${value}`);
-        styleContext.addRule(`
-            .tGroupList.lineIndet${side}${value} .tGroupListItem:after{
-                ${side}: ${value}
-            }
-        `);
     }
 
     render() {
-        let t = this;
+        const t = this;
+        const items = React.Children.map(this.props.children ,function (Item, index) {
+            return <li className="tGroupListItem">{Item}</li>;
+        });
 
+        const itemIndent = t.props.itemIndent;
         return (
-            <div className={classnames('tGroupList', {
-                [t.props.className]: !!t.props.className,
-                [t.state.lineIndentClassName]: !!t.state.lineIndentClassName
-            })}>
-                {React.Children.map(t.props.children, function (Item) {
-                    return <div className='tGroupListItem tFBH tFBAC'>
-                        {Item}
-                    </div>;
-                })}
+            <div>
+                {t.props.title && <h4 className="tGroupListHeader">{t.props.title}</h4>}
+                <ul className={classnames({
+                    tGroupList: true,
+                    [t.props.className]: !!t.props.className
+                })} style={{
+                    paddingLeft: itemIndent
+                }}>
+                    {items}
+                </ul>
             </div>
         );
     }
 }
 
 GroupList.propTypes = {
-    className: React.PropTypes.string,
-    lineIndent: React.PropTypes.oneOfType([
-        React.PropTypes.number,
-        React.PropTypes.string,
-        React.PropTypes.array
-    ])
+    itemIndent: React.PropTypes.number
 };
 
 GroupList.defaultProps = {
+    itemIndent: 15
 };
 
-export default GroupList;
+module.exports = GroupList;

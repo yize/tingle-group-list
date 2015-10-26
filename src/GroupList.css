@@ -5,22 +5,22 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-.tGroupList {
+._tGroupList {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.hairline .tGroupList {
+.hairline ._tGroupList {
   border-top: 0.013333333333333rem solid #ccc;
   border-bottom: 0.013333333333333rem solid #ccc;
 }
-.tGroupList + .tGroupList {
+._tGroupList + ._tGroupList {
   border-top: none;
 }
-.tGroupListItem {
+._tGroupListItem {
   position: relative;
   min-height: 44px;
 }
-.tGroupListItem:after {
+._tGroupListItem:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -28,10 +28,10 @@
   right: 0;
   border-bottom: 1px solid #ddd;
 }
-.hairline .tGroupListItem:after {
+.hairline ._tGroupListItem:after {
   border-bottom: 0.013333333333333rem solid #ccc;
 }
-.tGroupListItem:last-child:after {
+._tGroupListItem:last-child:after {
   border-bottom: none;
 }
 

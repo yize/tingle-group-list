@@ -5,34 +5,30 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
+._tGroupListHeader {
+  font-size: 14px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 ._tGroupList {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-.hairline ._tGroupList {
-  border-top: 0.013333333333333rem solid #ccc;
-  border-bottom: 0.013333333333333rem solid #ccc;
-}
-._tGroupList + ._tGroupList {
-  border-top: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 ._tGroupListItem {
-  position: relative;
-  min-height: 44px;
+  border-bottom: 1px solid #e6e6e6;
 }
-._tGroupListItem:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #ddd;
-}
-.hairline ._tGroupListItem:after {
-  border-bottom: 0.013333333333333rem solid #ccc;
-}
-._tGroupListItem:last-child:after {
+._tGroupListItem:last-child {
   border-bottom: none;
+}
+.hairline ._tGroupList {
+  border-top-width: 0.5px;
+  border-bottom-width: 0.5px;
+}
+.hairline ._tGroupListItem {
+  border-bottom-width: 0.5px;
 }
 
 /*# sourceMappingURL=GroupList.css.map */

@@ -8,12 +8,11 @@
 const classnames = require('classnames');
 const Context = require('tingle-context');
 
-console.warn && console.warn('`tingle-group-list` is depricated, use `tingle-group` instead. Here it is: https://github.com/tinglejs/tingle-group');
-
 class GroupList extends React.Component {
 
     constructor(props) {
         super(props);
+        console.warn && console.warn('`tingle-group-list` is deprecated, use `tingle-group` instead. Here it is: https://github.com/tinglejs/tingle-group');
     }
 
     render() {

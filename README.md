@@ -1,6 +1,8 @@
 # tingle-group-list [![npm version](https://badge.fury.io/js/tingle-group-list.svg)](http://badge.fury.io/js/tingle-group-list)
 
-## TL;DR
+### 这个组件要删除啦，建议使用`tingle-group`组件，[地址](https://github.com/tinglejs/tingle-group)
+
+## 以下文档即将过期
 
 GroupList 是常用的列表 Group 区块。提供基础的样式布局。
 

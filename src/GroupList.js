@@ -12,20 +12,21 @@ class GroupList extends React.Component {
 
     constructor(props) {
         super(props);
+        console.warn && console.warn('`tingle-group-list` is deprecated, use `tingle-group` instead. Here it is: https://github.com/tinglejs/tingle-group');
     }
 
     render() {
         const t = this;
         const items = React.Children.map(this.props.children ,function (Item, index) {
-            return <li className="tGroupListItem">{Item}</li>;
+            return <li className="_tGroupListItem">{Item}</li>;
         });
 
         const itemIndent = t.props.itemIndent;
         return (
             <div>
-                {t.props.title && <h4 className="tGroupListHeader">{t.props.title}</h4>}
+                {t.props.title && <h4 className="_tGroupListHeader">{t.props.title}</h4>}
                 <ul className={classnames({
-                    tGroupList: true,
+                    _tGroupList: true,
                     [t.props.className]: !!t.props.className
                 })} style={{
                     paddingLeft: itemIndent
